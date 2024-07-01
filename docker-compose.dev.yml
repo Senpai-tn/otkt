@@ -1,0 +1,12 @@
+services:
+  root:
+    container_name: root
+    build: 
+      target: dev
+    ports:
+      - 5000:5000
+    volumes:
+      - ./root/src:/App/src:ro
+    environment:
+      - NODE_ENV=dev
+
