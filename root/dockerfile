@@ -7,7 +7,7 @@ CMD ["npm", "start"]
 
 FROM node:20 as build
 WORKDIR /App
-COPY . .
+COPY . ./
 RUN npm install
 RUN npm run build
 
@@ -15,7 +15,7 @@ RUN npm run build
 
 FROM node:20 as prod
 WORKDIR /App
-COPY package*.json .
+COPY package*.json ./
 RUN npm install --only=production
 COPY --from=build /App/dist ./dist
 CMD ["npm", "start"]
@@ -23,7 +23,7 @@ CMD ["npm", "start"]
 
 FROM node:20 as dev
 WORKDIR /App
-COPY package*.json .
+COPY package*.json ./
 RUN npm install
 COPY ./ ./
 CMD ["npm", "run","start:dev"]
