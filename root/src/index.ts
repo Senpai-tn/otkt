@@ -6,7 +6,7 @@ connect("mongodb://root:example@mongo:27017").then(() =>
   console.log("connected to db")
 );
 app.get("/", (req, res) => {
-  res.send("Hello sweetie how are you sweetie");
+  res.send("Hello sweetie how are you");
 });
 
 app.listen(5000, () => {
