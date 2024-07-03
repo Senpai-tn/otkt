@@ -34,3 +34,12 @@ services:
       - root
     volumes:
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+  front:
+    restart: always
+    container_name: front
+    build: 
+      context: ./front
+    ports:
+      - 3000:3000
+    volumes:
+      - ./front/src:/WEB/src
