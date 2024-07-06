@@ -1665,5 +1665,5 @@ input[type="number"]:focus:-ms-input-placeholder {
 }
 
 .custom_bg.img_bg {
-  background-image: url("http://localhost:3000/bg.png");
+  background-image: url("http://165.51.222.52:3000/bg.png");
 }
