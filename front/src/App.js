@@ -2,6 +2,8 @@ import "./style.css";
 import { useEffect } from "react";
 import $ from "jquery"; // Import jQuery
 
+// Home news participation about contact us
+
 function App() {
   useEffect(() => {
     $(document).ready(function () {
@@ -15,7 +17,7 @@ function App() {
         var setASize = landingLogoImg.width();
       }
 
-      landingLogo.width(setASize).height(setASize);
+      // landingLogo.width(setASize).height(setASize);
 
       setTimeout(function () {
         $(".custom_bg").animate({ opacity: "1" }, 1000);
@@ -52,17 +54,15 @@ function App() {
           style={{ background: "#151516" }}
         >
           <img
-            src="https://livewp.site/wp/md/soho/wp-content/themes/soho/img/landing_logo.png"
+            src={"/otkt.png"}
             alt="Logo"
-            width="140"
-            height="100"
+            style={{ height: "240px", width: "240px", borderRadius: "50%" }}
             className="logo_def"
           />
           <img
-            src="https://livewp.site/wp/md/soho/wp-content/themes/soho/img/retina/landing_logo.png"
+            src={"/otkt.png"}
+            style={{ height: "240px", width: "240px", borderRadius: "50%" }}
             alt="Logo"
-            width="140"
-            height="100"
             className="logo_retina"
           />
         </a>

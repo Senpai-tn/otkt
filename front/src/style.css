@@ -1665,5 +1665,5 @@ input[type="number"]:focus:-ms-input-placeholder {
 }
 
 .custom_bg.img_bg {
-  background-image: url("https://livewp.site/wp/md/soho/wp-content/themes/soho/img/def_bg.jpg");
+  background-image: url("http://localhost:3000/bg.png");
 }
