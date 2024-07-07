@@ -67,7 +67,10 @@ function App() {
           />
         </a>
 
-        <div className="custom_bg img_bg"></div>
+        <div
+          className="custom_bg img_bg"
+          style={{ background: 'url("/bg.png")' }}
+        ></div>
 
         <div className="gt3_tools_bar__sidebar-cover"></div>
 
