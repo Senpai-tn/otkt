@@ -28,9 +28,7 @@ a {
   top: 0;
   visibility: hidden;
   opacity: 0;
-  cursor: url(https://livewp.site/wp/md/soho/wp-content/plugins/gt3-theme-tools-bar/assets/close.png)
-      16 16,
-    default;
+
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -244,7 +242,16 @@ a {
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+@media (min-width: 1200px) {
+  [class^="span"] {
+    margin: 0 !important;
+  }
+}
+
 @media only screen and (max-width: 600px) {
+  .span6.module_number_2.module_cont.module_html {
+    width: calc(100vw - 20px) !important;
+  }
   .gt3_tools_bar {
     width: 300px;
     right: -300px;

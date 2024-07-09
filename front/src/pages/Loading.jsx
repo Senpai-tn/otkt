@@ -79,7 +79,7 @@ function Loading() {
 
         <div className="gt3_tools_bar__sidebar-cover"></div>
 
-        <script
+        {/* <script
           type="text/javascript"
           src="https://livewp.site/wp/md/soho/wp-content/themes/soho/js/chart.js?ver=6.5.5"
           id="gt3_chart_js-js"
@@ -104,7 +104,7 @@ function Loading() {
           type="text/javascript"
           src="https://livewp.site/wp/md/soho/wp-content/themes/soho/js/theme.js?ver=6.5.5"
           id="gt3_theme_js-js"
-        ></script>
+        ></script> */}
       </div>
     </>
   );

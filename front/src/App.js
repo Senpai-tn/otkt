@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import { useSelector } from "react-redux";
 import Loading from "./pages/Loading";
 import Navbar from "./components/Navbar";
+import Contact from "./pages/Contact";
 
 const App = () => {
   const { loading } = useSelector((state) => state.uiSlice);
@@ -11,7 +12,7 @@ const App = () => {
     <div style={{ display: "flex" }}>
       {loading ? (
         <Routes>
-          <Route path="/" Component={Loading} />{" "}
+          <Route path="*" Component={Loading} />
         </Routes>
       ) : (
         <>
@@ -19,6 +20,7 @@ const App = () => {
           <div style={{ width: "100%", top: "80px", position: "absolute" }}>
             <Routes>
               <Route path="/" Component={Home} />
+              <Route path="/contact" Component={Contact} />
             </Routes>
           </div>
         </>
